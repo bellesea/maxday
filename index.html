@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>Happy Birthday MSW!!</h2>
+          <script src="confetti.js"></script>
+          <script>
+            const start = () => {
+              setTimeout(function () {
+                confetti.start();
+              }, 500); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+            };
+
+            const stop = () => {
+              setTimeout(function () {
+                confetti.stop();
+              }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+            };
+            // after this here we are calling both the function so it works
+            start();
+            stop();
+          </script>
+        </section>
+		<section data-auto-animate data-autoslide="2000">
+			<img src="/img/christina.png" style="height: 80vh;"" />
+		  </section>
+        <section data-auto-animate data-autoslide="2000">
+          <img src="/img/benjamin.png" style="width: 100%; max-height: 100%;" />
+        </section>
+        <section data-auto-animate data-autoslide="2000">
+          <img src="/img/caleb.png" style="width: 100%; max-height: 100%;" />
+        </section>
+        <section data-auto-animate data-autoslide="2000">
+          <img src="/img/belle.png" style="width: 100%; max-height: 100%;" />
+        </section>
+        <section data-auto-animate data-autoslide="2000">
+          <img src="/img/eleeza.png" style="width: 100%; max-height: 100%;" />
+        </section>
+        <section data-auto-animate data-autoslide="2000">
+          <img src="/img/ian.jpg" style="height: 70vh;" />
+        </section>
+		<section data-auto-animate data-autoslide="2000">
+			<img src="/img/jessica.png" style="width: 100%; max-height: 100%;" />
+		  </section>
+        <section data-auto-animate data-autoslide="2000">
+          <img src="/img/ced.png" style="width: 100%; max-height: 100%;" />
+        </section>
+        <section data-auto-animate data-autoslide="2000">
+          <img src="/img/ishan.png" style="width: 100%; max-height: 100%;" />
+        </section>
+        <section data-auto-animate data-autoslide="2000">
+          <img src="/img/ella.png" style="width: 100%; max-height: 100%;" />
+        </section>
+        <section data-auto-animate data-autoslide="2000">
+          <img src="/img/javi.png" style="width: 100%; max-height: 100%;" />
+        </section>
+        <section data-auto-animate data-autoslide="2000">
+          <img src="/img/sam.png" style="width: 100%; max-height: 100%;" />
+        </section>
+		<section data-auto-animate data-autoslide="2000">
+			<h2>Thank you for making Hack Club what it is today!</h2>
+		  </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+		controls: false,
+		progress: false,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
